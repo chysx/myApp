@@ -1,0 +1,66 @@
+<ion-view>
+
+<ion-header-bar align-title="center" class="bar-positive">
+  <button class="button button-icon ion-ios-arrow-left button-calm" ng-click="onBack();"></button>
+  <h1 class="title">header</h1>
+  <button class="button">right</button>
+</ion-header-bar>
+
+<ion-content>
+<!--表单输入框-->
+<div class="list">
+<!--普通输入框-->
+<label class="item item-input">
+<input type="text" placeholder="first name">
+</label>
+<!--多行输入框-->
+<label class="item item-input">
+<textarea placeholder="comments"></textarea>
+</label>
+<!--水平标签输入框-->
+<label class="item item-input">
+<span class="input-label">username:</span>
+<input type="text">
+</label>
+<!--垂直标签输入框-->
+<label class="item item-input item-stacked-label">
+<span class="input-label">username</span>
+<input type="text" placeholder="zhang">
+</label>
+<label class="item item-input item-floating-label">
+<!--<span class="input-label">username</span>-->
+<input type="text" placeholder="zhang">
+</label>
+</div>
+<!--内嵌表单输入框-->
+<div class="list list-inset">
+<h3 style="text-align: center">inset input</h3>
+<label class="item item-input">
+<input type="text" placeholder="username">
+</label>
+<label class="item item-input">
+<input type="text" placeholder="password">
+</label>
+</div>
+<!--内嵌输入域-->
+<div class="list">
+<div class="item item-input-inset">
+<label class="item-input-wrapper">
+<input type="text" placeholder="zhang">
+</label>
+<button class="button button-calm button-small">submit</button>
+</div>
+</div>
+<!--带图标的输入框-->
+<div class="list list-inser">
+<label class="item item-input">
+<i class="icon ion-search placeholder-icon"></i>
+<input type="text" placeholder="search">
+</label>
+</div>
+<ul class="list">
+  <li class="item item-toggle">test</li>
+</ul>
+</ion-content>
+
+</ion-view>

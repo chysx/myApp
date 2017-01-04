@@ -1,0 +1,43 @@
+<ion-view view-title="File">
+  <ion-nav-buttons side="right">
+    <a class="button button-clear ion-ios-book" style="font-size: 26px;width:36px;" ui-sref="helppage"></a>
+  </ion-nav-buttons>
+  <ion-content style="padding: 15px;" id="diy-content" class="diy-content-center">
+
+    <button class="button button-full button-assertive diy-button" ng-click="getFreeDiskSpace()">
+      获取设备总空闲空间
+    </button>
+    <button class="button button-full button-assertive diy-button" ng-click="checkDir()">
+      检测目录
+    </button>
+    <button class="button button-full button-assertive diy-button" ng-click="createDir()">
+      创建目录
+    </button>
+    <button class="button button-full button-assertive diy-button" ng-click="removeDir()">
+      删除目录
+    </button>
+
+    <button class="button button-full button-assertive diy-button" ng-click="checkFile()">
+      检测文件
+    </button>
+    <button class="button button-full button-assertive diy-button" ng-click="createFile()">
+      创建文件ionic.txt
+    </button>
+    <button class="button button-full button-assertive diy-button" ng-click="writeFile()">
+      写入文件ionic.txt > ionic中文网内容
+    </button>
+    <button class="button button-full button-assertive diy-button" ng-click="readFile()">
+      读取ionic.txt
+    </button>
+    <button class="button button-full button-assertive diy-button" ng-click="removeFile()">
+      删除文件
+    </button>
+
+
+
+  </ion-content>
+  <div class="icon ion-navicon-round diy-movelog" on-touch="onTouch($event)" on-drag="onDrag($event);"></div>
+  <ion-footer-bar class="bar-stable" id="diy-log">
+    <textarea disabled="disabled" readonly="readonly" ng-bind="logtext"></textarea>
+  </ion-footer-bar>
+</ion-view>

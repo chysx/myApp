@@ -1,0 +1,64 @@
+<ion-side-menus>
+  <ion-side-menu-content>
+    <div class="bar bar-header bar-positive">
+      <button class="button button-clear button-calm">left</button>
+      <p class="title">header</p>
+      <button class="button button-clear button-assertive">right</button>
+    </div>
+    <div class="bar bar-subheader bar-calm">
+      <p class="title">subheader</p>
+    </div>
+    <ion-content class="has-subheader">
+      <div class="list">
+        <a class="item item-icon-right" ng-click="onButtonClick();">
+          button
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right" ng-click="onListClick();">
+          list
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right" ng-click="onInputClick();">
+          input
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right" ng-click="onComplexClick();">
+          complex
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right" ng-click="onGridClick()">
+          grid
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right" ng-click="onFileClick()">
+          file
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right" ng-click="onOthers()">
+          others
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right" ng-click="onArray()">
+          array and json
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+      </div>
+    </ion-content>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar>
+      <button class="button button-clear button-positive">left</button>
+      <p class="title">header</p>
+    </ion-header-bar>
+    <ion-content>
+      <ul class="list">
+        <li class="item">item1</li>
+        <li class="item">item2</li>
+        <li class="item">item3</li>
+        <li class="item">item4</li>
+        <li class="item">item5</li>
+      </ul>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

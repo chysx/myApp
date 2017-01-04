@@ -1,0 +1,48 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <button class="button button-icon ion-ios-arrow-left button-calm" ng-click="onBack();"></button>
+    <p class="title">complex</p>
+  </ion-header-bar>
+
+  <ion-content>
+    <ul class="list">
+      <li class="item item-toggle">item1
+        <label class="toggle toggle-positive">
+          <input type="checkbox" checked>
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+      </li>
+      <li class="item item-toggle">item2
+        <label class="toggle toggle-positive">
+          <input type="checkbox" ng-checked="isChecked">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+      </li>
+    </ul>
+
+    <ion-list>
+      <ion-checkbox ng-model="isSelected">checkbox1</ion-checkbox>
+      <ion-checkbox ng-model="isSelected">checkbox2</ion-checkbox>
+    </ion-list>
+
+    <ion-list>
+      <ion-radio ng-model="isChoiced1" ng-value="radioValue1">radio1</ion-radio>
+      <ion-radio ng-model="isChoiced2" ng-value="radioValue2">radio2</ion-radio>
+    </ion-list>
+
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">name</div>
+        <select>
+          <option>zhang</option>
+          <option selected>guo</option>
+          <option>peng</option>
+        </select>
+      </label>
+    </div>
+  </ion-content>
+</ion-view>
